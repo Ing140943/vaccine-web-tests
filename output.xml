@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.3 on win32)" generated="20211127 14:49:13.072" rpa="false" schemaversion="2">
+<suite id="s1" name="3Am Vaccine Test" source="C:\year3\vv\vaccine-web-tests\3am_vaccine_test.robot">
+<test id="s1-t1" name="Test 1 Website is available">
+<kw name="Open the Vaccine Heaven Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 14:49:13.287" level="INFO">Opening browser 'chrome' to base url 'https://vaccine-haven.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20211127 14:49:13.287" endtime="20211127 14:49:20.609"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211127 14:49:20.609" endtime="20211127 14:49:20.739"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20211127 14:49:20.739" endtime="20211127 14:49:20.739"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>text=Vaccine Haven</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211127 14:49:21.774" level="INFO">Current page contains text 'Vaccine Haven'.</msg>
+<status status="PASS" starttime="20211127 14:49:20.740" endtime="20211127 14:49:21.774"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>text=Vaccine for everyone</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211127 14:49:22.799" level="INFO">Current page contains text 'Vaccine for everyone'.</msg>
+<status status="PASS" starttime="20211127 14:49:21.774" endtime="20211127 14:49:22.799"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:13.287" endtime="20211127 14:49:22.799"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:13.286" endtime="20211127 14:49:22.800"/>
+</test>
+<test id="s1-t2" name="Test 2 Verify my info button exist">
+<kw name="Select My Info on Home Page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>link:My Info</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211127 14:49:23.836" level="INFO">Element 'link:My Info' is displayed.</msg>
+<status status="PASS" starttime="20211127 14:49:22.802" endtime="20211127 14:49:23.836"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//a[@class="white"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20211127 14:49:24.360" level="INFO">Current page contains element 'xpath=//a[@class="white"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:23.836" endtime="20211127 14:49:24.360"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:22.801" endtime="20211127 14:49:24.360"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:22.801" endtime="20211127 14:49:24.360"/>
+</test>
+<test id="s1-t3" name="Test 3 Verify walk-in button exist">
+<kw name="Select Walk In on Home Page">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>link:Walk-in</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20211127 14:49:25.414" level="INFO">Element 'link:Walk-in' is displayed.</msg>
+<status status="PASS" starttime="20211127 14:49:24.363" endtime="20211127 14:49:25.414"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath=//a[@class="white"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20211127 14:49:25.926" level="INFO">Current page contains element 'xpath=//a[@class="white"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:25.414" endtime="20211127 14:49:25.926"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:24.362" endtime="20211127 14:49:25.926"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:24.362" endtime="20211127 14:49:25.927"/>
+</test>
+<test id="s1-t4" name="Test 4 Select the resevation menu">
+<kw name="Select Register Menu">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://text</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:25.932" level="INFO">Clicking element 'xpath://text'.</msg>
+<status status="PASS" starttime="20211127 14:49:25.931" endtime="20211127 14:49:27.040"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link:Reservation</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:27.041" level="INFO">Clicking link 'link:Reservation'.</msg>
+<status status="PASS" starttime="20211127 14:49:27.040" endtime="20211127 14:49:28.682"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:25.931" endtime="20211127 14:49:28.682"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:25.930" endtime="20211127 14:49:28.683"/>
+</test>
+<test id="s1-t5" name="Test 5 Try to make a reservation">
+<kw name="Make Reservation">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=citizen_id</arg>
+<arg>${my_citizen_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:28.687" level="INFO">Typing text '9621054602148' into text field 'name=citizen_id'.</msg>
+<status status="PASS" starttime="20211127 14:49:28.687" endtime="20211127 14:49:30.368"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[@name="site_name"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:30.368" level="INFO">Clicking element 'xpath=//select[@name="site_name"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:30.368" endtime="20211127 14:49:31.486"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//option[@value="OGYHSite"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:31.486" level="INFO">Clicking element 'xpath=//option[@value="OGYHSite"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:31.486" endtime="20211127 14:49:32.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//select[@name="vaccine_name"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:32.567" level="INFO">Clicking element 'xpath=//select[@name="vaccine_name"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:32.566" endtime="20211127 14:49:33.644"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//option[@value="Pfizer"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:33.645" level="INFO">Clicking element 'xpath=//option[@value="Pfizer"]'.</msg>
+<status status="PASS" starttime="20211127 14:49:33.644" endtime="20211127 14:49:34.699"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:34.699" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20211127 14:49:34.699" endtime="20211127 14:49:37.360"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:28.686" endtime="20211127 14:49:37.361"/>
+</kw>
+<kw name="Go To Home Page">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=nav__home__link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:37.364" level="INFO">Clicking element 'id=nav__home__link'.</msg>
+<status status="PASS" starttime="20211127 14:49:37.363" endtime="20211127 14:49:38.444"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:37.362" endtime="20211127 14:49:38.444"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:28.685" endtime="20211127 14:49:38.445"/>
+</test>
+<test id="s1-t6" name="Test 6 Check our reservation is exist">
+<kw name="Check Information">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link=My Info</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:38.447" level="INFO">Clicking link 'link=My Info'.</msg>
+<status status="PASS" starttime="20211127 14:49:38.447" endtime="20211127 14:49:40.026"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=citizen_id</arg>
+<arg>${my_citizen_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:40.027" level="INFO">Typing text '9621054602148' into text field 'name=citizen_id'.</msg>
+<status status="PASS" starttime="20211127 14:49:40.026" endtime="20211127 14:49:41.746"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:41.746" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20211127 14:49:41.746" endtime="20211127 14:49:44.347"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Setthanat</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211127 14:49:45.383" level="INFO">Current page contains text 'Setthanat'.</msg>
+<status status="PASS" starttime="20211127 14:49:44.347" endtime="20211127 14:49:45.383"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Kladee</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211127 14:49:46.418" level="INFO">Current page contains text 'Kladee'.</msg>
+<status status="PASS" starttime="20211127 14:49:45.383" endtime="20211127 14:49:46.418"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${selected_vaccine}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211127 14:49:47.453" level="INFO">Current page contains text 'Pfizer'.</msg>
+<status status="PASS" starttime="20211127 14:49:46.418" endtime="20211127 14:49:47.453"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:38.447" endtime="20211127 14:49:47.453"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:38.446" endtime="20211127 14:49:47.454"/>
+</test>
+<test id="s1-t7" name="Test 7 Cancel the Queue">
+<kw name="Cancel The Queue">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=cancel__btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211127 14:49:47.458" level="INFO">Clicking button 'id=cancel__btn'.</msg>
+<status status="PASS" starttime="20211127 14:49:47.458" endtime="20211127 14:49:50.088"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:47.457" endtime="20211127 14:49:50.088"/>
+</kw>
+<status status="PASS" starttime="20211127 14:49:47.456" endtime="20211127 14:49:50.088"/>
+</test>
+<status status="PASS" starttime="20211127 14:49:13.073" endtime="20211127 14:49:50.090"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="3Am Vaccine Test">3Am Vaccine Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
