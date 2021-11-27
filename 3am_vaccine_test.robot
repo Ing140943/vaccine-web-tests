@@ -25,7 +25,7 @@ Select Walk In on Home Page
    Page Should Contain Element  xpath=//a[@class="white"]
 
 Select Register Menu
-   Click Element  xpath://text
+   Click Element  xpath://*[@id="dropdown"]/text
    Click link  link:Reservation
 
 Make Reservation
